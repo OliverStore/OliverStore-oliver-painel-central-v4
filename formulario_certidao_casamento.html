@@ -1,0 +1,160 @@
+<!DOCTYPE html><html lang="pt-br"><head>
+
+    <!-- Google tag (gtag.js) -->
+
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-D7H9RWH352"></script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-D7H9RWH352');
+    </script>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="pt-br">
+
+    <title>Certidão de Casamento GTA RP</title>
+
+    <meta name="description" content="Saiba como se casar no GTA RP, obtenha sua certidão de casamento e participe de cerimônias no fórum do servidor. Tudo sobre casamento civil no GTA RP.">
+    <meta name="keywords" content="casamento GTA RP, certidão de casamento GTA RP, casamento civil GTA RP, fórum GTA RP, cerimônia GTA RP, casamento no servidor, advogado GTA RP, fivem, fiveM">
+
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.ico">
+
+    <script src="js/html2canvas.min.js"></script>
+
+
+    <script async="" src="js/adsbygoogle.js" crossorigin="anonymous">
+        </script>
+
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Certidão de casamento GTA RP">
+    <meta property="og:description" content="Saiba como se casar no GTA RP, obtenha sua certidão de casamento e participe de cerimônias no fórum do servidor. Tudo sobre casamento civil no GTA RP.">
+    <meta property="og:image" content="images/CERTIDAO_DE_CASAMENTO.png">
+    <meta property="og:url" content="formulario_certidao_casamento.html">
+    <meta property="og:type" content="article">
+
+</head>
+
+<body>
+
+
+    <script src="js/mainheader.js"></script>
+
+    <div id="weddingCertificate" class="container">
+
+        <h1 class=" text-center">Gerador de Certidão de Casamento</h1>
+        <form id="certificateForm" class="was-validated">
+
+            <div class="w-100 d-flex flex-column text-center mb-3">
+                <label class="text-capitalize text-center bold-custom-font letter-spacing-custom" for="groomName">Nome
+                    do Noivo</label>
+                <input class="form-control is-invalid" id="groomName" placeholder="Digite aqui o nome" required="" maxlength="32" oninput="transformarMinuscula(this)" onkeypress="return validarMinusculas(event)">
+            </div>
+
+            <div class="w-100 d-flex flex-column text-center mb-3">
+                <label class="text-capitalize bold-custom-font" for="brideName">Nome da Noiva</label>
+                <input class="form-control is-invalid" id="brideName" placeholder="Digite aqui o nome" required="" maxlength="32" oninput="transformarMinuscula(this)" onkeypress="return validarMinusculas(event)">
+            </div>
+
+            <div class="w-100 d-flex flex-column mb-3">
+                <label class="bold-custom-font letter-spacing-custom text-center" for="judgeName">Nome do(a)
+                    Juiz(a)</label>
+                <input class="form-control is-invalid" id="judgeName" placeholder="Digite aqui o nome" required="" oninput="transformarMinuscula(this)" onkeypress="return validarMinusculas(event)">
+            </div>
+
+            <div class="w-100 d-flex flex-column mb-3">
+                <label class="text-capitalize bold-custom-font text-center" for="cityName">Nome da Cidade</label>
+                <input class="form-control is-invalid" id="cityName" placeholder="Digite aqui o nome" required="" maxlength="20" oninput="transformarMinuscula(this)" onkeypress="return validarMinusculas(event)">
+            </div>
+
+            <div class="w-100 d-flex flex-column mb-3">
+                <label class="text-capitalize bold-custom-font text-center" for="cityName">Selecione a data</label>
+                <input value="" class="form-control" id="date" placeholder="Digite aqui a data" required="" maxlength="10">
+            </div>
+
+            <div class="w-100 d-flex flex-column mb-3">
+                <h2 class="bold-custom-font letter-spacing-custom text-center">Selecione foto dos noivos</h2>
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="groomImage" required="">
+                    <label class="custom-file-label" id="groomImageLabel" for="groomImage">Escolher arquivo...</label>
+                </div>
+            </div>
+
+            <div class="w-100 d-flex flex-column mb-3">
+                <h2 class="bold-custom-font letter-spacing-custom text-center">Selecione a logo da cidade</h2>
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="brideImage" required="">
+                    <label class="custom-file-label" id="groomImageLabel2" for="groomImage">Escolher arquivo...</label>
+                </div>
+            </div>
+
+            <div class="w-100 d-flex justify-content-center mt-3">
+                <button class="btn btn-primary btn-custom" id="generateCertificateButton" type="button">Gerar
+                    Certidão</button>
+            </div>
+        </form>
+    </div>
+
+
+    <div id="certificateImageSection"></div>
+
+
+    <div id="dadosCertidao"></div>
+    
+    <script type="text/javascript">
+        document.write(unescape('%20%20%3C%73%63%72%69%70%74%3E%0A%20%20%20%20%20%20%20%20%64%6F%63%75%6D%65%6E%74%2E%67%65%74%45%6C%65%6D%65%6E%74%42%79%49%64%28%27%67%72%6F%6F%6D%49%6D%61%67%65%27%29%2E%61%64%64%45%76%65%6E%74%4C%69%73%74%65%6E%65%72%28%27%63%68%61%6E%67%65%27%2C%20%66%75%6E%63%74%69%6F%6E%20%28%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%76%61%72%20%66%69%6C%65%4E%61%6D%65%20%3D%20%74%68%69%73%2E%66%69%6C%65%73%5B%30%5D%2E%6E%61%6D%65%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%64%6F%63%75%6D%65%6E%74%2E%67%65%74%45%6C%65%6D%65%6E%74%42%79%49%64%28%27%67%72%6F%6F%6D%49%6D%61%67%65%4C%61%62%65%6C%27%29%2E%74%65%78%74%43%6F%6E%74%65%6E%74%20%3D%20%66%69%6C%65%4E%61%6D%65%3B%0A%20%20%20%20%20%20%20%20%7D%29%3B%0A%0A%20%20%20%20%20%20%20%20%64%6F%63%75%6D%65%6E%74%2E%67%65%74%45%6C%65%6D%65%6E%74%42%79%49%64%28%27%62%72%69%64%65%49%6D%61%67%65%27%29%2E%61%64%64%45%76%65%6E%74%4C%69%73%74%65%6E%65%72%28%27%63%68%61%6E%67%65%27%2C%20%66%75%6E%63%74%69%6F%6E%20%28%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%76%61%72%20%66%69%6C%65%4E%61%6D%65%20%3D%20%74%68%69%73%2E%66%69%6C%65%73%5B%30%5D%2E%6E%61%6D%65%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%64%6F%63%75%6D%65%6E%74%2E%67%65%74%45%6C%65%6D%65%6E%74%42%79%49%64%28%27%67%72%6F%6F%6D%49%6D%61%67%65%4C%61%62%65%6C%32%27%29%2E%74%65%78%74%43%6F%6E%74%65%6E%74%20%3D%20%66%69%6C%65%4E%61%6D%65%3B%0A%20%20%20%20%20%20%20%20%7D%29%3B%0A%0A%20%20%20%20%20%20%20%20%66%75%6E%63%74%69%6F%6E%20%74%72%61%6E%73%66%6F%72%6D%61%72%4D%69%6E%75%73%63%75%6C%61%28%69%6E%70%75%74%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%76%61%72%20%76%61%6C%6F%72%20%3D%20%69%6E%70%75%74%2E%76%61%6C%75%65%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%69%6E%70%75%74%2E%76%61%6C%75%65%20%3D%20%76%61%6C%6F%72%2E%74%6F%4C%6F%77%65%72%43%61%73%65%28%29%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%64%6F%63%75%6D%65%6E%74%2E%67%65%74%45%6C%65%6D%65%6E%74%42%79%49%64%28%27%64%61%74%65%27%29%2E%61%64%64%45%76%65%6E%74%4C%69%73%74%65%6E%65%72%28%27%69%6E%70%75%74%27%2C%20%66%75%6E%63%74%69%6F%6E%20%28%65%76%65%6E%74%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%6C%65%74%20%69%6E%70%75%74%56%61%6C%75%65%20%3D%20%65%76%65%6E%74%2E%74%61%72%67%65%74%2E%76%61%6C%75%65%3B%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%2F%2F%20%52%65%6D%6F%76%65%72%20%63%61%72%61%63%74%65%72%65%73%20%6E%E3%6F%20%6E%75%6D%E9%72%69%63%6F%73%0A%20%20%20%20%20%20%20%20%20%20%20%20%69%6E%70%75%74%56%61%6C%75%65%20%3D%20%69%6E%70%75%74%56%61%6C%75%65%2E%72%65%70%6C%61%63%65%28%2F%5C%44%2F%67%2C%20%27%27%29%3B%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%2F%2F%20%41%64%69%63%69%6F%6E%61%72%20%66%6F%72%6D%61%74%61%E7%E3%6F%20%64%61%20%64%61%74%61%0A%20%20%20%20%20%20%20%20%20%20%20%20%69%66%20%28%69%6E%70%75%74%56%61%6C%75%65%2E%6C%65%6E%67%74%68%20%3E%20%34%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%69%6E%70%75%74%56%61%6C%75%65%20%3D%20%69%6E%70%75%74%56%61%6C%75%65%2E%72%65%70%6C%61%63%65%28%2F%28%5C%64%7B%32%7D%29%28%5C%64%7B%32%7D%29%28%5C%64%7B%34%7D%29%2F%2C%20%27%24%31%2F%24%32%2F%24%33%27%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%20%65%6C%73%65%20%69%66%20%28%69%6E%70%75%74%56%61%6C%75%65%2E%6C%65%6E%67%74%68%20%3E%20%32%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%69%6E%70%75%74%56%61%6C%75%65%20%3D%20%69%6E%70%75%74%56%61%6C%75%65%2E%72%65%70%6C%61%63%65%28%2F%28%5C%64%7B%32%7D%29%28%5C%64%7B%32%7D%29%2F%2C%20%27%24%31%2F%24%32%27%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%2F%2F%20%41%74%75%61%6C%69%7A%61%72%20%6F%20%76%61%6C%6F%72%20%64%6F%20%63%61%6D%70%6F%0A%20%20%20%20%20%20%20%20%20%20%20%20%65%76%65%6E%74%2E%74%61%72%67%65%74%2E%76%61%6C%75%65%20%3D%20%69%6E%70%75%74%56%61%6C%75%65%3B%0A%20%20%20%20%20%20%20%20%7D%29%3B%0A%0A%20%20%20%20%3C%2F%73%63%72%69%70%74%3E'));
+    </script>  <script>
+        document.getElementById('groomImage').addEventListener('change', function () {
+            var fileName = this.files[0].name;
+            document.getElementById('groomImageLabel').textContent = fileName;
+        });
+
+        document.getElementById('brideImage').addEventListener('change', function () {
+            var fileName = this.files[0].name;
+            document.getElementById('groomImageLabel2').textContent = fileName;
+        });
+
+        function transformarMinuscula(input) {
+            var valor = input.value;
+            input.value = valor.toLowerCase();
+        }
+
+        document.getElementById('date').addEventListener('input', function (event) {
+            let inputValue = event.target.value;
+
+            // Remover caracteres não numéricos
+            inputValue = inputValue.replace(/\D/g, '');
+
+            // Adicionar formatação da data
+            if (inputValue.length > 4) {
+                inputValue = inputValue.replace(/(\d{2})(\d{2})(\d{4})/, '$1/$2/$3');
+            } else if (inputValue.length > 2) {
+                inputValue = inputValue.replace(/(\d{2})(\d{2})/, '$1/$2');
+            }
+
+            // Atualizar o valor do campo
+            event.target.value = inputValue;
+        });
+
+    </script>
+
+    <script src="js/marriageForm.js"></script>
+    <script src="js/mainfooter.js"></script>
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+
+
+</body></html>

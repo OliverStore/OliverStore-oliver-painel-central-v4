@@ -1,0 +1,1517 @@
+/* Estilos gerais */
+body {
+    /* width: 100vw; */
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5;
+    overflow-x: hidden;
+    background: #000000;
+    color: #fff;
+    font-family: 'Montserrat';
+
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+body::-webkit-scrollbar {
+    width: 2px;
+    background: #0020ff;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #ffffff;
+}
+
+.container {
+    max-width: 100%;
+    background: #906800ba;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container .buttonCalc {
+    height: 45px;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 14px;
+    background: linear-gradient(0deg, rgb(255 255 255) 20%, rgba(51, 35, 65, 0.8183648459383753) 100%);
+    border: #FFF;
+    color: #FFF;
+    margin: 10px 0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    text-decoration: none;
+    font-family: 'Montserrat';
+}
+
+.container .buttonCalc:hover {
+    transition: .2s;
+    background: rgb(255 255 255 / 84%);
+    text-decoration: none;
+
+}
+
+
+
+.row {
+    /* background: red; */
+    align-items: center;
+}
+
+#welcome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 900px;
+    box-sizing: border-box;
+    padding: 87px 0 0 20px;
+    background: rgb(255 255 255);
+    background: linear-gradient(0deg, rgba(26, 2, 47, 1) 20%, rgb(249 249 249 / 70%) 41%, rgba(26, 2, 47, 0.39548319327731096) 66%, rgba(26, 2, 47, 0.2498249299719888) 92%, rgba(47, 51, 79, 1) 100%);
+}
+
+#welcome a {
+    width: 506px;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #000000c7;
+    font-size: 20px;
+    font-family: 'MontserratB';
+    background: rgb(206, 255, 72);
+    z-index: 3;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    margin-bottom: 100px;
+}
+
+#welcome a:hover {
+    background: rgb(159, 197, 54);
+}
+
+
+
+
+#welcome h1 {
+    width: 100%;
+    z-index: 2;
+    color: rgb(227, 227, 230);
+    font-family: 'MontserratB';
+    text-transform: uppercase;
+    text-align: center;
+    /*  */
+    text-shadow: 4px 4px 2px black;
+
+    margin-top: 30%;
+}
+
+#welcome .welcomeImage {
+    height: 90% !important;
+    position: absolute;
+}
+
+
+/* Estilos do cabeçalho */
+
+header {
+    width: 100vw !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 90px;
+    box-sizing: border-box;
+    padding: 0 90px;
+    text-align: center;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    /* Sombra para dar profundidade */
+    background: rgba(13, 14, 20, 0.7);
+    z-index: 999;
+}
+
+h1 {
+    margin-top: 50px;
+    font-size: 2.5em;
+
+    /* Aumenta o tamanho da fonte para ser mais notável */
+}
+
+
+/* .titulo {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+} */
+
+/* ver se afeta algo */
+
+.descricao {
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: #666;
+    /* Torna o texto um pouco mais escuro */
+}
+
+.banner-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.redes-sociais {
+    background-color: #000;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    /* Centraliza os ícones */
+}
+
+.redes-sociais a,
+.redes-sociais-footer a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.5em;
+}
+
+.logo {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 10px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#crimes,
+#atenuantes {
+    height: 300px;
+}
+
+#crimes::-webkit-scrollbar,
+#atenuantes::-webkit-scrollbar {
+    width: 10px !important;
+    background-color: rgb(53, 6, 47);
+}
+
+#crimes::-webkit-scrollbar-thumb,
+#atenuantes::-webkit-scrollbar-thumb {
+    background: rgb(254 253 255);
+}
+
+#crimeForm {
+    margin-bottom: 30px;
+}
+
+#resultado {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card-title {
+    font-size: 1.25em;
+    /* font-weight: bold; */
+    margin-bottom: 10px;
+}
+
+.card-title h5 {
+    color: #000 !important;
+}
+
+.card p {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.card button {
+    margin-bottom: 10px;
+    background-color: #007BFF;
+    color: #FFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+    background-color: #0056b3;
+}
+
+#resultado-copiado {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+
+/* Estilos do menu */
+
+.navbar {
+    transition: all .6s;
+    backface-visibility: hidden;
+    justify-content: flex-end;
+}
+
+
+/* -------estilo sobre nos--------- */
+
+.custom-dropdown {
+    background: rgba(13, 14, 20, 0.925)
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ---------------- */
+
+.custom-dropdown a {
+    color: #fff !important;
+    letter-spacing: .7px;
+}
+
+.custom-dropdown a:hover {
+    background: rgba(38, 40, 56, 0.925)
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+    font-size: 1.5em;
+    /* Aumenta o tamanho da fonte da marca */
+}
+
+.navbar .navbar-brand img {}
+
+.navbar .nav-link,
+.dropdown-menu {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #ccc;
+}
+
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 20px;
+}
+
+
+.navbar .nav-link {
+    color: #fff !important;
+    letter-spacing: .7px;
+    font-family: 'Montserrat';
+}
+
+.navbar-light .navbar-toggler-white {
+    color: #fff;
+    border-color: #fff;
+}
+
+.navbar-expand-lg {
+    width: 100%;
+    padding: 0;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0;
+    white-space: nowrap;
+    opacity: 0.6;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    opacity: 1;
+}
+
+
+
+/* ------------------------------ */
+
+#Atenuantes {
+    margin-left: 20px;
+}
+
+#Atenuantes h2,
+#codigo-penal h2 {
+    color: white;
+    font-family: 'MontserratB';
+    text-transform: uppercase;
+    letter-spacing: .01vw;
+}
+
+#codigo-penal h2,
+#codigo-penal p {
+    margin-left: 20px;
+}
+
+#Atenuantes p,
+#codigo-penal p {
+    color: white;
+    font-family: 'MontserratX';
+    text-transform: uppercase;
+    letter-spacing: .01vw;
+}
+
+.dataTables_wrapper label {
+    display: flex;
+    align-items: center;
+    color: #FFF;
+    margin-top: 10px;
+    margin: 10px;
+    /* background: rgb(0, 255, 98) !important; */
+}
+
+.dataTables_wrapper label input {
+    text-transform: capitalize;
+    color: #FFF !important;
+}
+
+.dataTables_wrapper .dataTables_length select {
+    color: #FFF;
+    text-align: center;
+}
+
+.table-responsive {
+    background: #ffe700;
+    margin: 20px;
+    overflow-x: hidden !important;
+}
+
+
+#tabela-atenuantes,
+#tabela-codigo-penal {
+    color: #FFF;
+    font-family: 'Montserrat';
+    letter-spacing: .5px;
+}
+
+#tabela-atenuantes thead tr:nth-child(1) th:nth-child(3) {
+    width: 25% !important;
+}
+
+#tabela-atenuantes thead tr:nth-child(1) th,
+#tabela-codigo-penal thead tr:nth-child(1) th {
+    text-align: center;
+}
+
+#tabela-atenuantes thead tr,
+#tabela-codigo-penal thead tr {
+    background: #fcfb04ce;
+}
+
+
+#tabela-atenuantes tr,
+#tabela-codigo-penal tr,
+#tabela-codigo-penal td {
+    background: #ffe700;
+}
+
+.dataTables_wrapper .dataTables_info {
+    margin: 10px;
+
+    color: #FFF !important;
+}
+
+.paginate_button {
+    background: #69A6F5 !important;
+    cursor: pointer !important;
+    color: #FFF !important;
+
+    margin: 10px;
+}
+
+.paginate_button:hover {
+    background: #4b8bdf !important;
+
+}
+
+
+#tabela-atenuantes_previous,
+#tabela-atenuantes_next {
+    color: #FFF !important;
+}
+
+/* --------sobre nos--------------- */
+
+#aboutUs img {
+    height: 300px;
+    border-radius: 50% !important;
+    /* background-color: green; */
+}
+
+#ourValues {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-decoration: none;
+    margin-top: 50px;
+}
+
+#ourValues li {
+    width: 200px;
+    /*  */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+#ourValues li i {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+
+
+/* ----------------------- */
+
+/* -------anuncio amazon----------------- */
+
+#product-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px 0 30px 0;
+}
+
+
+
+/* ------- Footer ---------------- */
+
+footer {
+    width: 100vw;
+    height: 158px;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 30px;
+    background: rgb(21, 23, 35);
+    color: #fff;
+    /* padding: 20px; */
+    text-align: center;
+    font-size: 0.875em;
+}
+
+footer div {
+    width: 33.33%;
+    display: flex;
+    align-items: center !important;
+    /* background: red; */
+}
+
+footer div:nth-child(1) {
+    justify-content: flex-start;
+}
+
+footer div:nth-child(2) {
+    justify-content: center;
+}
+
+footer .copyright-section {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .copyright-section div:nth-child(2) {
+    width: 400px;
+    display: flex;
+    /* background-color: green; */
+}
+
+footer .copyright-section div:nth-child(2) a {
+    color: white;
+    margin: 0 5px;
+    text-decoration: none !important;
+    color: rgb(97, 97, 113);
+
+}
+
+footer .copyright-section p {
+    letter-spacing: 0.1em;
+    color: rgb(97, 97, 113);
+    justify-self: center;
+    text-align: center;
+    margin: 0;
+}
+
+footer .copyright-section p a {
+    color: rgb(97, 97, 113);
+}
+
+footer .social-media-section {
+    justify-content: end;
+}
+
+.redes-sociais-footer i {
+    transition: transform 0.3s ease;
+}
+
+.redes-sociais-footer i:hover {
+    transform: translateY(-3px);
+}
+
+.redes-sociais-footer {
+    width: 100%;
+
+    justify-content: flex-end !important;
+}
+
+/* -----------tabela------------------ */
+
+.sorting_1 {
+    background: #202235 !important;
+}
+
+tr:hover .sorting_1,
+tr:hover {
+    background: #2b2f53cb !important;
+}
+
+
+
+/* --------carousel--------------- */
+
+
+.carouselExampleCaptions {
+    width: 10px !important;
+    background: rgb(0, 119, 255) !important;
+}
+
+.carousel-indicators button {
+    width: 30px;
+    height: 10px;
+    border-radius: 20px;
+    /* margin-bottom: 10px !important; */
+    background: rgb(0, 119, 255);
+    border: none;
+    margin: 0 5px;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    background: transparent;
+    border: none;
+}
+
+
+.carousel-item {
+    width: 100%;
+
+    border-radius: 20px;
+    background: linear-gradient(0deg, black 0%, rgba(0, 0, 0, 0) 62%)
+}
+
+.carousel-item img {
+    width: 100% !important;
+    border-radius: 20px;
+    margin: 0;
+}
+
+/* --------fale conosc--------------- */
+#contactUs {
+    min-height: 80vh !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: red; */
+}
+
+/* ----------em breve------------- */
+
+#shortly img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50% !important;
+}
+
+.shortly-box {
+    -webkit-box-shadow: 0px 5px 30px -10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 30px -10px rgba(0, 0, 0, 0.1);
+    padding: 35px 50px;
+    border-radius: 20px;
+    position: relative;
+    background: rgb(17, 19, 29);
+    box-shadow: 0 0 15px rgba(101, 59, 138, 1);
+}
+
+.shortly-box .plan {
+    font-size: 34px;
+}
+
+.shortly-badge {
+    position: absolute;
+    top: 0;
+    z-index: 999;
+    right: 0;
+    width: 100%;
+    display: block;
+    font-size: 15px;
+    padding: 0;
+    overflow: hidden;
+    height: 100px;
+}
+
+.shortly-badge .badge {
+    float: right;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    right: -67px;
+    top: 17px;
+    position: relative;
+    text-align: center;
+    width: 200px;
+    font-size: 13px;
+    margin: 0;
+    padding: 7px 10px;
+    font-weight: 500;
+    color: #ffffff;
+    background: #fb7179;
+}
+
+/* --------funcionalidades atuais--------------- */
+
+#currentFeatures a {
+    background: rgb(255 255 255) !important;
+    border-color: #ffffff;
+}
+
+#currentFeatures .descriptionFunctions {
+    background: rgba(255, 0, 0, 0) !important;
+}
+
+#currentFeatures h5,
+#shortly h3 {
+
+    font-family: 'MontserratB';
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-shadow: 4px 4px 2px rgba(101, 59, 138, 1);
+
+}
+
+#currentFeatures .list-group-item {
+    color: #fff;
+    font-family: "Montserrat";
+    letter-spacing: .5px;
+    background: rgb(17, 19, 29);
+}
+
+/* --------parcerias--------------- */
+
+#partnes {
+    margin: 20px 0;
+}
+
+/* ----------------------- */
+
+@media (max-width: 991px) {
+
+    .teste {
+        background: #ffdf00 !important;
+    }
+
+}
+
+/* --- menu hamburguer para celular -- */
+@media (max-width: 991px) {
+
+    header {
+        padding: 0 15px;
+    }
+
+    #welcome a {
+        width: 350px;
+        margin-bottom: 220px;
+    }
+
+
+    .navbar-toggler {
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        /* background-color: green !important; */
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        top: 65px;
+        right: 0px;
+        justify-content: flex-end;
+        background: rgba(13, 14, 20, 0.925)
+    }
+
+    .navbar-collapse ul li {
+        width: 100%;
+        margin: 3px 0;
+    }
+
+    .navbar-collapse ul li:hover {
+        background: rgba(38, 40, 56, 0.925)
+    }
+
+    .navbar-toggler-icon {
+        background-color: #fff;
+        width: 30px;
+        height: 3px;
+        margin: 4px 0;
+        border-radius: 2px;
+    }
+
+    #product-section {
+        max-width: 90%;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+
+    footer {
+        height: 250px;
+        /* background: red; */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    footer .copyright-section p {
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+    #codigo-penal li {
+        background: #fff700 !important;
+        display: none;
+    }
+
+    #codigo-penal li:first-child,
+    #codigo-penal li:last-child {
+        /* background: red !important; */
+        margin: 0 auto;
+        display: block !important;
+    }
+
+    .social-media-section {
+        width: 100%;
+        margin-top: 10px;
+
+        /* background: red !important; */
+    }
+
+    .redes-sociais-footer {
+        width: 100%;
+        align-items: center;
+        justify-content: center !important;
+        /*  */
+    }
+
+    .logo-section {
+        justify-content: center !important;
+        margin-bottom: 20px;
+    }
+
+}
+
+/* -----certidão de casamento --------- */
+.btn-custom {
+    background: #000000 !important;
+    border-color: #000000 !important;
+}
+
+#weddingCertificate,
+#adoptionCertificate,
+#walletOabContainer {
+    width: 700px;
+    /* height: 650px; */
+    border-radius: 20px;
+    background: rgb(255 206 0 / 57%);
+    box-shadow: 0 0 0 15px black;
+    margin: 120px auto;
+    box-shadow: 0 0 15px rgb(255 255 255);
+}
+
+#weddingCertificate h1 {
+    margin: 20px 0;
+}
+
+#weddingCertificate h1,
+#adoptionCertificate h1,
+#walletOabContainer h1 {
+    font-family: 'MontserratB';
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'MontserratB';
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-shadow: 2px 2px 2px rgb(11 187 255);
+}
+
+#weddingCertificate h2,
+#adoptionCertificate h2,
+#walletOabContainer h2 {
+    font-size: 20px;
+}
+
+#weddingCertificate #certificateForm input,
+#adoptionCertificate #adoptioncertificate input,
+#walletOabContainer input,
+.custom-file-label {
+    background: rgb(255 255 255) !important;
+}
+
+/* ----- certidão de casamento --------- */
+
+#weddingCertificateContainer {
+    width: 70vw;
+    height: 35vw;
+    margin: 0 auto;
+    background-image: url(../images/certidao-de-divorcio.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#weddingCertificateContainer h1 {
+    font-size: 5vw;
+    letter-spacing: .1vw;
+    margin: 0;
+    margin-top: 1vw;
+}
+
+#weddingCertificateContainer h2 {
+    font-size: 2vw;
+    letter-spacing: .3vw;
+    margin: 0;
+    margin-top: .5vw;
+}
+
+#weddingCertificateContainer h3 {
+    font-size: 1vw;
+    margin: 0;
+    margin-top: 1vw;
+}
+
+#weddingCertificateContainer h4 {
+    font-size: 2vw;
+    margin: 0;
+    margin-top: 1vw;
+    line-height: 3vw;
+    /* font-family: Arial, Helvetica, sans-serif !important; */
+    /* background: red; */
+    text-transform: capitalize !important;
+}
+
+#weddingCertificateContainer h5 {
+    font-size: 5vw;
+    margin: 0;
+    margin-top: 1vw;
+    line-height: 4vw;
+    /* background: red !important; */
+}
+
+#weddingCertificateContainer p {
+    margin: 1vw;
+    font-size: 1vw;
+    text-transform: capitalize;
+}
+
+#weddingCertificateContainer .weddingPhotoContainer {
+    width: 10vw;
+    height: 15vw;
+    left: 0;
+    position: absolute;
+    left: 1vw;
+    top: 1vw;
+    border-radius: 20%;
+    /* background: rgba(0, 128, 0, 0.349); */
+    /* position: relative; */
+}
+
+#weddingCertificateContainer .weddingPhotoContainer .weddingPhotoBanckground {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: #25252556;
+    border-radius: 20%;
+
+}
+
+#weddingCertificate textarea {
+    box-sizing: border-box;
+    padding: .3vw;
+    background: rgb(17, 19, 29) !important;
+    outline: none;
+    resize: none;
+    color: #ffffff;
+    border-radius: 10px;
+    border: solid 1px #1c0d68;
+
+}
+
+
+
+#weddingCertificateContainer img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20%;
+
+    /*  */
+}
+
+#weddingCertificateContainer img[src="img/flores.svg"] {
+    width: 100% !important;
+    /* height: 20% !important; */
+    position: absolute;
+    right: -5vw;
+    bottom: -7vw;
+    z-index: 999;
+    /* background: red; */
+}
+
+
+.custom-position {
+    top: 20vw;
+    left: 26vw;
+    /* background-color: rebeccapurple; */
+}
+
+#logCityContainer {
+    width: 100%;
+    height: 7vw;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* background: red; */
+}
+
+#logoPandora {
+    width: 3vw !important;
+    height: 3vw !important;
+    position: absolute;
+    top: 2.3vw;
+    right: 2.7vw;
+    opacity: 0.3;
+}
+
+.logoCity {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.logoCity img {
+    width: 4vw !important;
+    height: 4vw !important;
+    /* margin-bottom: .2vw; */
+    margin: 0 2vw .2vw 2vw !important;
+}
+
+#linkBanner {
+    /* background: red !important; */
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* ----- certidão de adoção --------- */
+
+#adoptionCertificateContainer {
+    width: 70vw;
+    height: 40vw;
+    box-sizing: border-box;
+    padding: 0 3vw;
+    margin: 0 auto;
+    background-image: url(../images/backgroundCertidaoAdocao.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#adoptionCertificateContainer h1 {
+    font-size: 4vw;
+    font-family: 'Wedges', sans-serif;
+    color: #ffffff;
+}
+
+#adoptionCertificateContainer .logocity {
+    position: absolute;
+    right: 2vw;
+    top: 2.2vw;
+}
+
+#adoptionCertificateContainer .logocity img {
+    width: 7.7vw;
+    height: 7.7vw;
+}
+
+#adoptionCertificateContainer .text-adoption-certificate {
+    box-sizing: border-box;
+    padding-left: 10vw;
+}
+
+#adoptionCertificateContainer p {
+    width: 39vw;
+    color: #000;
+    font-size: 1.1vw;
+    letter-spacing: .02vw;
+    font-family: 'Montserrat';
+    text-align: center;
+    /* background: red; */
+}
+
+#adoptionCertificateContainer h2 {
+    font-size: 1.5vw;
+    color: #ffffff;
+}
+
+#adoptionCertificateContainer .playerPhotoContainer {
+    width: 13.54vw;
+    height: 16.56vw;
+    border-radius: 1vw;
+    background: #ffffff;
+}
+
+#adoptionCertificateContainer .playerPhotoContainer img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1vw;
+
+}
+
+#adoptionCertificateContainer .logoPandora {
+    width: 5vw;
+}
+
+/* -------------- */
+
+#blog #bannerBlog {
+    background: url(../images/banner_blog.png);
+    background-size: cover;
+}
+
+#blog .bg-card-blog {
+    background: rgb(0 110 255);
+    background: linear-gradient(180deg, rgb(3, 72, 161) 13%, rgb(1, 78, 179) 50%, rgb(2, 81, 185) 92%);
+}
+
+#blog #hotPost img {
+    width: 40%;
+}
+
+#blog-carousel p,
+#blog-carousel h3 {
+    z-index: 1;
+}
+
+#blog-carousel .carousel-item {
+    min-height: 400px;
+}
+
+#blog-carousel .carousel-item h3 {
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 20% auto 0 auto;
+    /*  */
+}
+
+
+#blog-carousel img {
+    width: 400px !important;
+    height: 400px !important;
+    /* height: 100% !important; */
+    position: absolute;
+    top: 0 !important;
+    left: -10px;
+    z-index: -1;
+    /* background: red; */
+}
+
+/* ----- ChildAge --------- */
+
+#childAge::-webkit-inner-spin-button {
+    display: none;
+}
+
+/* ----- Calculadora penal --------- */
+
+#penaltyCalculator {
+    border-radius: 20px;
+    overflow: hidden;
+    background: rgb(4, 33, 77);
+    background: linear-gradient(176deg, rgba(4, 33, 77, 1) 13%, rgba(16, 106, 222, 0.5551470588235294) 50%, rgba(33, 127, 249, 0.12657563025210083) 92%);
+}
+
+.bg-penaltCalculator {
+    background: linear-gradient(267deg, rgba(3, 20, 46, 0.568) 13%, rgba(3, 66, 147, 0.5551470588235294) 50%, rgba(18, 69, 136, 0.12657563025210083) 92%);
+}
+
+.bg-penaltCalculator-2 {
+    background: rgb(3, 20, 46);
+    background: -moz-linear-gradient(87deg, rgba(3, 20, 46, 1) 13%, rgba(3, 66, 147, 0.5551470588235294) 50%, rgba(18, 69, 136, 0.12657563025210083) 92%);
+    background: -webkit-linear-gradient(87deg, rgba(3, 20, 46, 1) 13%, rgba(3, 66, 147, 0.5551470588235294) 50%, rgba(18, 69, 136, 0.12657563025210083) 92%);
+    background: linear-gradient(87deg, rgba(3, 20, 46, 1) 13%, rgba(3, 66, 147, 0.5551470588235294) 50%, rgba(18, 69, 136, 0.12657563025210083) 92%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#03142e", endColorstr="#124588", GradientType=1);
+}
+
+/* -----certidão de nascimento --------- */
+
+#birthCertificate {
+    position: relative;
+    width: 100%;
+}
+
+#birthCertificate .certificate {
+    width: 50vw;
+    height: 70vw;
+}
+
+#birthCertificate .certificate img {
+    width: 100%;
+    height: 100%;
+}
+
+#birthCertificate .birthCertificateContainer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+}
+
+#birthCertificate .birthCertificateContainer .cityLogo {
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    position: absolute !important;
+    top: 17vw;
+    left: 22vw;
+    overflow: hidden;
+}
+
+#birthCertificate .birthCertificateContainer .cityLogo img {
+    width: 100%;
+}
+
+#birthCertificate .birthCertificateContainer #childName,
+#birthCertificate .birthCertificateContainer #dateBirth,
+#birthCertificate .birthCertificateContainer #hometown,
+#birthCertificate .birthCertificateContainer #sex,
+#birthCertificate .birthCertificateContainer #skinColor {
+    width: 24vw;
+    height: 2vw;
+    position: absolute !important;
+    top: 25vw;
+    left: 19vw;
+    overflow: hidden;
+    color: #ffffff !important;
+}
+
+#birthCertificate .birthCertificateContainer #dateBirth {
+
+    top: 28vw;
+}
+
+#birthCertificate .birthCertificateContainer #hometown {
+
+    top: 31vw;
+}
+
+#birthCertificate .birthCertificateContainer #sex {
+
+    top: 34vw;
+}
+
+#birthCertificate .birthCertificateContainer #skinColor {
+
+    top: 37vw;
+}
+
+#birthCertificate .birthCertificateContainer #fatherName,
+#birthCertificate .birthCertificateContainer #motherName {
+    width: 24vw;
+    height: 2vw;
+    position: absolute;
+    left: 10.5vw;
+    display: flex;
+    align-items: center;
+    color: #ffffff !important;
+
+    /* background-color: rgb(0, 255, 98); */
+}
+
+#importantObservations,
+#birthCertificate .judgeName {
+    color: #ffffff;
+}
+
+#birthCertificate .birthCertificateContainer #fatherName {
+    top: 42vw;
+
+}
+
+#birthCertificate .birthCertificateContainer #motherName {
+    top: 45.6vw;
+}
+
+#birthCertificate .birthCertificateContainer #importantObservations {
+    width: 36vw;
+    height: 6vw;
+    position: absolute;
+    box-sizing: border-box;
+    padding: .3vw;
+    overflow: hidden;
+    top: 52vw;
+    left: 7.2vw;
+    /* background-color: rebeccapurple; */
+}
+
+#birthCertificate .birthCertificateContainer #childPhoto {
+    width: 10.196vw;
+    height: 13.65vw;
+    position: absolute;
+    top: 24vw;
+    left: 7.4vw;
+    border-radius: .9vw;
+    overflow: hidden;
+    /* background-color: green; */
+}
+
+#birthCertificate .birthCertificateContainer #childPhoto img {
+    width: 100%;
+    height: 100%;
+}
+
+#birthCertificate .judgeName {
+    width: 26vw;
+    height: 2vw;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 10vw;
+    left: 12vw;
+    white-space: nowrap;
+
+}
+
+#downloadButton {
+    width: 20%;
+    margin-left: 40%;
+    /* background: red !important; */
+    /* margin-left: 50%; */
+}
+
+/* ----- estilos pre definidos --------- */
+
+.bottom-5 {
+    bottom: 5.5vw;
+}
+
+.bottom-3 {
+    bottom: 2vw;
+}
+
+.bottom-0_7 {
+    bottom: .7vw;
+}
+
+.right-1_8 {
+    right: 1.8vw;
+}
+
+.top-20 {
+    top: 100%;
+}
+
+.w-custom {
+    width: 30% !important;
+}
+
+.w-47 {
+    width: 47% !important;
+}
+
+.font-size-custom {
+    font-size: .8rem !important;
+}
+
+.font-size-custom-2 {
+    font-size: 1.1rem !important;
+}
+
+.w-100-custom {
+    width: 100% !important;
+
+}
+
+.ml-custom {
+    margin-left: 1px !important;
+}
+
+.mr-4_5-custom {
+    margin-right: 2.5% !important;
+}
+
+
+
+.py-custom {
+    padding-top: 5.9px;
+    padding-bottom: 3px;
+    margin-top: 4px;
+}
+
+.box-sizing-border-box {
+    box-sizing: border-box !important;
+}
+
+.custom-font {
+    font-family: 'Montserrat' !important;
+}
+
+.thin-custom-font {
+    font-family: 'MontserratX' !important;
+}
+
+.extra-thin-custom-font {
+    font-family: 'MontserratH' !important;
+}
+
+.bold-custom-font {
+    font-family: 'MontserratB' !important;
+}
+
+.extra-bold-custom-font {
+    font-family: 'MontserratB2' !important;
+}
+
+.custom-font-sloop-script {
+    font-family: 'sloopScript' !important;
+}
+
+.letter-spacing-custom {
+    letter-spacing: .7px;
+}
+
+.weddingTitleColor {
+    color: #306492;
+}
+
+.color-default {
+    color: #000000 !important;
+}
+
+.scroll-custom {
+    overflow-y: scroll !important;
+}
+
+.scroll-custom::-webkit-scrollbar {
+    width: 10px;
+    background: #08111a48;
+}
+
+.scroll-custom::-webkit-scrollbar-thumb {
+    width: 10px;
+    border-radius: 10px;
+    background: #306492;
+}
+
+.max-h-custom {
+    max-height: 250px !important;
+}
+
+.max-h-custom-2 {
+    max-height: 750px !important;
+}
+/* ---------------------- */
+
+.card-artigo img {
+    height: 300px !important;
+    max-width: 360px !important;
+    object-fit: cover;
+}
+
+
+/* ---------------------- */
+
+@font-face {
+    font-family: 'sloopScript';
+    src: url(../assets/font/SloopScriptRegular/Sloop\ Script\ Regular.ttf)
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/MontserratRegular.ttf);
+}
+
+@font-face {
+    font-family: 'MontserratX';
+    src: url(../fonts/montserrat-extralight.ttf);
+}
+
+@font-face {
+    font-family: 'MontserratH';
+    src: url(../fonts/MontserratHairline.otf);
+}
+
+@font-face {
+    font-family: 'MontserratB';
+    src: url(../fonts/MontserratBold.ttf);
+}
+
+@font-face {
+    font-family: 'MontserratB2';
+    src: url(../fonts/MontserratExtraBold.otf);
+}
+
+@import url('https://fonts.cdnfonts.com/css/wedges');
+
+@font-face {
+    font-family: 'Wedges';
+    src: url('https://fonts.cdnfonts.com/e5/wedges-2.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; /* Adicionando font-display */
+}
